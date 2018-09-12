@@ -1,0 +1,39 @@
+
+/** {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}*/
+#zoom-animation {
+  perspective: 500px;
+}
+
+#zoom-animation div,
+#zoom-animation p {
+  background: midnightblue;
+  color: white;
+  height: 200px;
+  line-height: 200px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  width: 200px;
+}
+
+#zoom-animation p {
+  animation: zooming 5s alternate infinite both;
+  background: limegreen;
+  left: 2rem;
+  opacity: 0.7;
+  position: absolute;
+  top: 2rem;
+}
+
+@keyframes zooming {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 200px);
+  }
+}
