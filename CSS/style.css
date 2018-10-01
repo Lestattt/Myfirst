@@ -2,15 +2,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-.main {
-  min-width: 1280px;
-  background: #000;
-}
-.products {
-  display: flex;
-  justify-content: space-between;
-}
-.item {
-  
+  background: rgb(19, 19, 121);
+  font-family: arial;
 }
