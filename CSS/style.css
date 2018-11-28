@@ -16,7 +16,6 @@ body {
   font-family: Trebuchet MS, Helvetica;
 }
 
-/* Шапка сайта */
 
 header {
   width: 100%;
@@ -78,11 +77,13 @@ header #logo span {
   text-decoration: underline;
 }
 
+#logo span:hover {
+  color: #b0b0b0;
+}
 #about > a:not(:last-child) {
   margin-right: 7%;
 }
 
-/* Стили для фиксированной шапки */
 
 .fixed {
   z-index: 5000;
@@ -97,11 +98,10 @@ header.fixed #logo {
 .fixed #about a {color: #343434}
 .fixed #about a:hover {color: #7c7c7c}
 
-/* Главный блок на сайте */
 
 #top {
   width: 100%;
-  background-image: url(https://www.lovelymockups.com/wp-content/uploads/2017/01/mackbook-on-table.jpg);
+  background-image: url(https://marketeer.kapost.com/wp-content/uploads/2018/03/code-and-marketing-header-compressor.jpg);
   background-blend-mode: multiply;
   background-color: #2e3a44;
   background-size: cover;
@@ -145,7 +145,6 @@ header.fixed #logo {
   color: #ccc;
 }
 
-/* Блок с возможностями */
 
 #main {
   float: left;
@@ -154,18 +153,21 @@ header.fixed #logo {
   color: #484848;
   font-size: 1.3em;
 }
+.text-center {
+  font-size: 2.8em;
+}
 
 @media (min-width: 1401px) {
   #main {
     padding: 100px 20%;
-    width: 60%;
+    width: 100%;
   }
 }
 
 @media (max-width: 1400px) {
   #main {
     padding: 100px 10%;
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -185,7 +187,6 @@ header.fixed #logo {
 #main h2 {font-size: 3em}
 #main span {color: #a0a0a0}
 
-/* Блок с преимуществами */
 
 #overview {
   float: left;
@@ -246,9 +247,9 @@ header.fixed #logo {
     margin-right: 0!important;
     margin-left: 10%!important;
   }
+  
 }
 
-/* Блок с контактами */
 #contacts {
   width: 100%;
   float: left;
@@ -325,7 +326,6 @@ h1, h2, h3, h4, h5 {
   background-color: #c15443;
 }
 
-/* Вопросы и ответы */
 
 #faq {
   background-color: #fff;
