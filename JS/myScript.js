@@ -1,6 +1,10 @@
 "use strict";
 
-function button2Click() {
-    let input = document.getElementById("input");
-    input.value = "bla";
-}
+function func() {
+	let elem = document.getElementsByClassName('test');
+	
+	for(let i = 1; i <= elem.length; i++) {
+		elem[i].innerHTML = i;
+		}
+
+	}
