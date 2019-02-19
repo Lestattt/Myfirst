@@ -1,16 +1,8 @@
 "use strict";
 
-//Эта функция запускает таймер
 function start() {
-	window.timerId = window.setInterval(timer, 1000);
-}
-//Эта функция останавливает таймер
-function stop() {
-	window.clearInterval(window.timerId);
-}
+	let start = document.querySelector('#start');
+	let p = document.querySelector('#p');
+	let i = 0;
 
-//Эта функция меняет value для инпута
-function timer() {
-	var elem = document.getElementById('test');
-	elem.value = parseInt(elem.value)+1;
 }
