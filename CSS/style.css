@@ -373,3 +373,12 @@ h1, h2, h3, h4, h5 {
   font-size: 0.95em;
   margin-bottom: 40px;
 }
+#elem {
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+footer {
+  width: 250px;
+	height: 250px;
+}
