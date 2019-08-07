@@ -1,12 +1,13 @@
 "use strict";
 
-let promise = new Promise((resolve, reject) => {
+var a = 10; // глобальна область видимості
+function foo() {
+// Оголошення var a спливе на початок функції
+// Щось на зразок: var a;
 
-    setTimeout(() => {
-      // переведёт промис в состояние fulfilled с результатом "result"
-      resolve("result");
-    }, 1000);
-  
-  });
-  
- 
+console.log(a); // виведе undefined
+
+// справжня ініціалізація значенням 20 відбувається лише тут
+   var a = 20; // локальна область видимості
+}
+foo();
