@@ -1,13 +1,13 @@
 "use strict";
 
-var a = 10; // глобальна область видимості
-function foo() {
-// Оголошення var a спливе на початок функції
-// Щось на зразок: var a;
+let person = {
+    name: "alex",
+    get age(){
+        console.log(27);
+    },
+    set age() {
 
-console.log(a); // виведе undefined
+    }
 
-// справжня ініціалізація значенням 20 відбувається лише тут
-   var a = 20; // локальна область видимості
 }
-foo();
+person.age;
