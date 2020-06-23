@@ -1,3 +1,6 @@
 .idea/
 cities/
 react-tutorial
+node_modules
+package-lock.json
+package.json
